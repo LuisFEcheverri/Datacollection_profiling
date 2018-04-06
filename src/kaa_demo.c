@@ -164,7 +164,7 @@ int main(void)
 /*-------------------------------------------------------------------------------* 
  * Create/update profile                                                         *                 
  *-------------------------------------------------------------------------------*/                   
-	   kaa_profile_client_side_counter_profile_t *profile = kaa_profile_client_side_counter_profile_create(); //check kaa/src/kaa/gen/
+	   kaa_profile_client_profile_t *profile = kaa_profile_client_profile_create(); //check kaa/src/kaa/gen/
      profile->company_location = kaa_string_move_create(KAA_EXAMPLE_COMPANY_LOCATION, NULL);
      profile->company_name = kaa_string_move_create(KAA_EXAMPLE_COMPANY_NAME, NULL);
 	   profile->area = kaa_string_move_create(KAA_EXAMPLE_AREA, NULL);

@@ -1,0 +1,15 @@
+{
+    "type":"record",
+    "name":"server_profile",
+    "namespace":"org.kaaproject.kaa.schema.sample.profile",
+    "fields":[
+        {
+            "name":"subscription_plan",
+            "type":"string"
+        },
+        {
+            "name":"activation_flag",
+            "type":"boolean"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+  "type" : "record",
+  "name" : "client_profile",
+  "namespace" : "org.kaaproject.kaa.schema.sample.profile",
+  "fields" : [ {
+    "name" : "company_location",
+    "type" : {
+      "type" : "string",
+      "avro.java.string" : "String"
+    },
+    "maxLength" : 20
+  }, {
+    "name" : "company_name",
+    "type" : {
+      "type" : "string",
+      "avro.java.string" : "String"
+    },
+    "maxLength" : 20
+  }, {
+    "name" : "area",
+    "type" : {
+      "type" : "string",
+      "avro.java.string" : "String"
+    },
+    "maxLength" : 20
+  }, {
+    "name" : "line",
+    "type" : "int"
+  }, {
+    "name" : "position",
+    "type" : "int"
+  }, {
+    "name" : "id",
+    "type" : {
+      "type" : "string",
+      "avro.java.string" : "String"
+    },
+    "maxLength" : 20
+  }, {
+    "name" : "os",
+    "type" : {
+      "type" : "enum",
+      "name" : "OS",
+      "symbols" : [ "FreeRTOS", "Android", "iOS", "Linux" ]
+    },
+    "displayNames" : [ "FreeRTOS", "Android", "iOS", "Linux" ]
+  }, {
+    "name" : "build",
+    "type" : {
+      "type" : "string",
+      "avro.java.string" : "String"
+    }
+  }, {
+    "name" : "os_version",
+    "type" : {
+      "type" : "string",
+      "avro.java.string" : "String"
+    },
+    "maxLength" : 20
+  }, {
+    "name" : "type",
+    "type" : {
+      "type" : "enum",
+      "name" : "device_type",
+      "symbols" : [ "Register", "Counter" ]
+    },
+    "displayName" : "type",
+    "displayNames" : [ "Register", "Counter" ]
+  } ],
+  "version" : 1,
+  "displayName" : "Client side counter profile"
+}
